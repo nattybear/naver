@@ -43,6 +43,7 @@ def get_profile():
 
 @route('/write')
 def write():
+    response.set_header('Cache-Control', 'no-cache, no-store, must-revalidate')
     return template('write.html')
 
 @post('/action')
@@ -61,4 +62,4 @@ state = login.generate_state()
 
 login_url = login.get_auth(client_id, callback_url, state)
 
-run(host='0.0.0.0')
+run(host='0.0.0.0', reloader=True)
