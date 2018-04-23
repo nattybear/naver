@@ -1,7 +1,7 @@
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode, quote
 
-from md2html import md2html
+from md2html.md2html import md2html
 
 def enc(x):
     x = quote(x)
