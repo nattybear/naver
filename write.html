@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta charset='utf-8'>
 <title>네이버 카페 글쓰기</title>
+<style>
+textarea {
+    width: 100%;
+    height: 200px;
+}
+</style>
 </head>
 <body>
-    <form action='/action' method='post'>
-        <div>
-            <label>카페 아이디</label>
-            <input type='text' name='clubid' value='24010784'>
-        </div>
-        <div>
-            <label>게시판 아이디</label>
-            <input type='text' name='menuid' value='597'>
-        </div>
-        <div>
-            <label>게시글 제목</label>
-            <input type='text' name='subject' value='naver cafe write api test'>
-        </div>
-        <div>
-            <label>게시글 내용</label>
-            <textarea name='content'>한글</textarea>
-        </div>
-        <div>
-            <input type='submit'>
-        </div>
+    <div class='w3-container w3-blue'>
+        <h2>네이버 카페 글쓰기</h2>
+    </div>
+    <form class='w3-container' action='/action' method='post'>
+        <p>
+        <label class='w3-text-blue'>카페 아이디</label>
+        <input class='w3-input' type='text' name='clubid' value='24010784'></p>
+        <p>
+        <label class='w3-text-blue'>게시판 아이디</label>
+        <input class='w3-input' type='text' name='menuid' value='597'></p>
+        <p>
+        <label class='w3-text-blue'>게시글 제목</label>
+        <input class='w3-input' type='text' name='subject'></p>
+        <p>
+        <label class='w3-text-blue'>게시글 내용</label>
+        <textarea name='content'></textarea></p>
+        <input class='w3-btn w3-blue' type='submit'>
     </form>
 </body>
 </html>
